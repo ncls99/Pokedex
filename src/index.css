@@ -1,0 +1,51 @@
+/*? ---- RESET ---- ?*/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0
+}
+
+h1, h2, h3, h4, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+button {
+    border: none;
+}
+
+/*?---- VARIABLES ---- ?*/
+
+:root{
+
+    --color-red: #d93f3f,
+    --color-white: white,
+
+}
+
+main {
+    gap: 20px;
+}

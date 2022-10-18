@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+.titleImg{
+    margin-bottom: 10px;
+    max-width: 300px;
+}
+
+
+.inputsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.inputPokedexForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectType {
+    color: white;
+    min-height: 40px;
+    background: #d93f3f;
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 315px;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    box-shadow: -1px 2px 10px #0004;
+    font-family: 'Ubuntu', sans-serif;
+ }
+
+ .selectType::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+  }
+  
+  .selectType::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
+  
+  .selectType::-webkit-scrollbar-corner{
+    display: none;
+  }
