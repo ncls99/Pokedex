@@ -35,9 +35,11 @@ const Pokedex = () => {
 
   return (
     <div>
-      <header>
+      <header className='pokedexHeaderHome'>
       <img className='titleImg' src={title} alt="title image" />
-        <p>Welcome <span>{userName}</span> here you can find your favorite Pokemon</p>
+      <div className='greetingContainer'>
+        <p>Welcome <span>{userName}</span>! Here you can find your favorite Pokemon</p>
+      </div>
       </header>
       <aside className='inputsContainer'>
         <InputSearch />

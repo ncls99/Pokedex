@@ -1,10 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
+
+.pokedexHeaderHome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .titleImg{
+    margin-top: 10px;
     margin-bottom: 10px;
     max-width: 300px;
 }
 
+.greetingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.greetingContainer p {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.greetingContainer span {
+    font-weight: bold;
+    color: #d93f3f;
+}
 
 .inputsContainer{
     display: flex;
