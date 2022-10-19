@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+ 
+
+.cardPokemonIdContainer{
+    margin-top: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+}
+
+.cardHeader {
+    height: 100px;
+    background-color: green;
+    position: relative;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.cardImg{
+    width: 33%;
+    position: absolute;
+    left: 35%;
+    top: 51px;
+    transform: translate(-50%);
+    transform: translateY(-95px);
+    
+}
+
+.informationSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemonName{
+    text-align: center;
+}
+
+.whInfo{
+    margin-top: 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.weight p, h4{
+text-align: center;
+}
+
+.height p, h4{
+    text-align: center;
+}
+
+.typesAnHabilities {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.item1 {
+    text-align: center;
+}
+
+.item2{
+    text-align: center;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.statPokemon{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.boxStats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.statBar {
+    width: 100%;
+}
+
+.cardMoves{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    padding: 15px;
+}
+
+.move{
+    font-size: 15px;
+    background-color: lightgrey;
+    padding: 8px;
+    border-radius: 10px;
+}
