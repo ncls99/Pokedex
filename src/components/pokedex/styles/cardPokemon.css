@@ -3,7 +3,22 @@
 .cardsContainer{
     padding: 10px;
     gap: 10px;
+    margin: auto;
 }
+
+.cardsContainer::-webkit-scrollbar {
+    width: 8px;     
+    height: 8px;    
+  }
+  
+  .cardsContainer::-webkit-scrollbar-thumb {
+    background: #d93f3f;
+    border-radius: 4px;
+  }
+  
+  .cardsContainer::-webkit-scrollbar-corner{
+    display: none;
+  }
 
 .cardPokemon {
     width: 100%;
@@ -186,6 +201,7 @@
 .bg-normal {
     background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
 }
+
 .bg-fighting{
     background: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
 }
