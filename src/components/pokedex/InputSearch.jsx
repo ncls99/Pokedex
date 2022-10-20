@@ -13,8 +13,8 @@ const navigate = useNavigate()
 
   return (
     <form className='inputPokedexForm' onSubmit={submit} >
-        <input class="pokedexInput" id='search' type="text" placeholder='Search your Pokemon'/>
-        <button class="pokedexBtn">Search</button>
+        <input className="pokedexInput" id='search' type="text" placeholder='Search your Pokemon'/>
+        <button className="pokedexBtn">Search</button>
     </form>
   )
 }

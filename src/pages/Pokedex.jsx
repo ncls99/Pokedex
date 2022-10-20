@@ -9,37 +9,41 @@ import title from '../assets/img/PokedexTitle.png'
 import Pagination from '../components/pokedex/Pagination'
 
 const Pokedex = () => {
-
+  
+  const userName = useSelector(state => state.userName)
   const [pokemons, setPokemons] = useState()
-  const [selectectedType, setSelectectedType] = useState('All Pokemons')
+  const [selectedType, setSelectedType] = useState('All Pokemons')
+  
   
   useEffect(() => {
-    if (selectectedType !== 'All Pokemons') {
-      axios.get(selectectedType)
-        .then(res => {
+    if (selectedType !== 'All Pokemons') {
+      axios.get(selectedType)
+      .then(res => {
           const result = res.data.pokemon.map(e => e.pokemon)
           setPokemons(result)
         })
         .catch(err => console.log(err))
 
     } else {
-
-      const URL = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
+      const URL = `https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0`
       axios.get(URL)
-        .then(res => setPokemons(res.data.results))
+        .then(res => {
+          setPokemons(res.data.results)
+        })
         .catch(err => console.log(err))
-
     }
-  }, [selectectedType])
+  }, [selectedType])
 
-  const userName = useSelector(state => state.userName)
+const handleNextPage = (page) => {
+  setCurrentPage(page)
+}
 
-  const [page, setPage] = useState(1)
-  const [pokePerPage, setPokePerPage] = useState(12)
-  const initialPoke = (page - 1) * pokePerPage
-  const finalPoke = page * pokePerPage
-  
-  
+const [page, setPage] = useState(20)
+const [pokemonPerPage, setPokemonPerPage] = useState(12)
+const initialPoke = (page - 1) * pokemonPerPage
+const finalPoke = page * pokemonPerPage
+
+
 
 
   return (
@@ -52,8 +56,7 @@ const Pokedex = () => {
       </header>
       <aside className='inputsContainer'>
         <InputSearch />
-        <SelectByType setSelectectedType={setSelectectedType}/>
-        <Pagination page={page} pagesLength={pokemons && pokemons.length / pokePerPage}/>
+        <SelectByType setSelectedType={setSelectedType}/>
       </aside>
       <main>
         <div className='cardsContainer'>
@@ -66,6 +69,11 @@ const Pokedex = () => {
             ))
           }
         </div>
+        <Pagination 
+        page={page} 
+        pagesLength={pokemons && Math.ceil(pokemons.length / pokemonPerPage)}
+        setPage={setPage}
+        />
       </main>
     </div>
   )

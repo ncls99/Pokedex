@@ -21,7 +21,7 @@
   }
 
 .cardPokemon {
-    width: 100%;
+    width: 90%;
     max-width: 450px;
     background-color: white;
     border-radius: 13px;
@@ -29,15 +29,21 @@
     overflow: hidden;
     border-width: 10px;
     border-style: solid;
-    border-color: green;
+    border-color: white;
     margin-bottom: 20px;
     cursor: pointer;
     box-shadow: -1px 2px 10px #0004;
+    transform: 200ms ease;
 }
+
+.cardPokemon:hover {
+    transform: scale(1.02);
+    transition: transform 200ms ease;
+  }
 
 .cardPokeHeader {
     height: 140px;
-    background-color: green;
+    background-color: white;
     position: relative;
     margin-bottom: 60px;
 }
