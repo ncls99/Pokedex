@@ -34,7 +34,7 @@ const PokedexById = () => {
       <header className='headerPage'>
         <img className='titleImg' src={title} alt="title image" />
       </header>
-      <div className={`cardPokemonIdContainer border-${pokemon?.types[0].type.name}`}>
+      <div className='cardPokemonIdContainer'>
         <header className={`cardHeader bg-${pokemon?.types[0].type.name}`} >
           <img className='cardImg' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
         </header>

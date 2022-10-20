@@ -23,6 +23,7 @@
 .cardPokemon {
     width: 100%;
     max-width: 450px;
+    background-color: white;
     border-radius: 13px;
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
@@ -114,71 +115,71 @@
 /*?----Border--Colors----?*/
 
 .border-grass{
-    border-color: #b1dbbc;
+    border-color: #b1dbbc !important;
 }
 
 .border-fire{
-    border-color: #e75c35;
+    border-color: #e75c35 !important; 
 }
 
 .border-water{
-    border-color: #1479FB;
+    border-color: #1479FB !important;
 }
 
 .border-bug{
-    border-color: #4AB648;
+    border-color: #4AB648 !important;
 }
 
 .border-normal{
-    border-color: #735259;
+    border-color: #735259 !important;
 }
 
 .border-fighting{
-    border-color: #96402A;
+    border-color: #96402A !important;
 }
 
 .border-poison{
-    border-color: #5B3184;
+    border-color: #5B3184 !important;
 }
 
 .border-ghost{
-    border-color: #323569;
+    border-color: #323569 !important;
 }
 
 .border-rock{
-    border-color: #7E7E7E;
+    border-color: #7E7E7E !important;
 }
 
 .border-dark{
-    border-color: #030706;
+    border-color: #030706 !important;
 }
 
 .border-ice{
-    border-color: #6FBEDF;
+    border-color: #6FBEDF !important;
 }
 
 .border-steel{
-    border-color: #5E736C;
+    border-color: #5E736C !important;
 }
 
 .border-dragon{
-    border-color: #478A93;
+    border-color: #478A93 !important;
 }
 
 .border-fairy{
-    border-color: #971B45;
+    border-color: #971B45 !important;
 }
 
 .border-electric{
-    border-color: #0C1395;
+    border-color: #0C1395 !important;
 }
 
 .border-ground{
-    border-color: #654008;
+    border-color: #654008 !important;
 }
 
 .border-psychic{
-    border-color: #7753e7;;
+    border-color: #7753e7 !important;;
 }
 
 /**----Border--Colors----**/
