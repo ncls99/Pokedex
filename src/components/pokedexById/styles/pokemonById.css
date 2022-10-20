@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
  
+.page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.headerPage{
+display: flex;
+align-items: center;
+background-color: #d93f3f;
+width: 100%;
+}
 
 .cardPokemonIdContainer{
     margin-top: 80px;
     font-family: 'Ubuntu', sans-serif;
     background-color: #ffffff;
+    border: 10px solid white;
+    border-radius: 15px;
 }
 
 .cardHeader {
     height: 100px;
     background-color: green;
     position: relative;
-    border: 2px solid white;
     margin-bottom: 20px;
 }
 
@@ -29,10 +44,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 
 .pokemonName{
     text-align: center;
+    text-transform: capitalize;
 }
 
 .whInfo{
@@ -66,6 +83,7 @@ text-align: center;
 
 .item2{
     text-align: center;
+    text-transform: capitalize;
 }
 
 .stats{
@@ -73,6 +91,10 @@ text-align: center;
     flex-direction: column;
     width: 100%;
     padding: 20px;
+}
+
+.nameStat {
+    text-transform: uppercase;
 }
 
 .statPokemon{
@@ -104,4 +126,13 @@ text-align: center;
     background-color: lightgrey;
     padding: 8px;
     border-radius: 10px;
+}
+
+@media (min-width: 600px){
+
+    
+
+
+
+
 }

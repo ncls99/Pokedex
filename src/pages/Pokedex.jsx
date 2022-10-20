@@ -6,12 +6,13 @@ import axios from 'axios'
 import InputSearch from '../components/pokedex/InputSearch'
 import SelectByType from '../components/pokedex/SelectByType'
 import title from '../assets/img/PokedexTitle.png'
+import Pagination from '../components/pokedex/Pagination'
 
 const Pokedex = () => {
 
   const [pokemons, setPokemons] = useState()
   const [selectectedType, setSelectectedType] = useState('All Pokemons')
-
+  
   useEffect(() => {
     if (selectectedType !== 'All Pokemons') {
       axios.get(selectectedType)
@@ -33,6 +34,14 @@ const Pokedex = () => {
 
   const userName = useSelector(state => state.userName)
 
+  const [page, setPage] = useState(1)
+  const [pokePerPage, setPokePerPage] = useState(12)
+  const initialPoke = (page - 1) * pokePerPage
+  const finalPoke = page * pokePerPage
+  
+  
+
+
   return (
     <div>
       <header className='pokedexHeaderHome'>
@@ -44,11 +53,12 @@ const Pokedex = () => {
       <aside className='inputsContainer'>
         <InputSearch />
         <SelectByType setSelectectedType={setSelectectedType}/>
+        <Pagination page={page} pagesLength={pokemons && pokemons.length / pokePerPage}/>
       </aside>
       <main>
         <div className='cardsContainer'>
           {
-            pokemons?.map(pokemon => (
+            pokemons?.slice(initialPoke, finalPoke).map(pokemon => (
               <CardPokemon
                 key={pokemon.url}
                 url={pokemon.url}
