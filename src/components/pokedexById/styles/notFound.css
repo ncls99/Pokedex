@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+.errorPage{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.pokedexHeaderNotFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.errorTitle{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.imgBox{
+    width: 150%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imgBox img {
+    width: 100%;
+}
+
+.linkError{
+    font-size: 30px;
+    margin-top: 80px;
+    text-align: center;
+    background-color: #d93f3f;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+@media (min-width: 1600px) {
+
+    .errorTitle{
+        margin-bottom: 20px;
+    }
+    
+    .imgBox{
+        width: 50%;
+    }
+    
+    .imgBox img {
+        width: 100%;
+    }
+    
+    .linkError{
+        font-size: 30px;
+        margin-top: 50px;
+        
+    }
+}
+
+@media (min-width: 1000px) {
+    .errorTitle{
+        margin-bottom: 20px;
+    }
+    
+    .imgBox{
+        width: 50%;
+    }
+    
+    .imgBox img {
+        width: 100%;
+    }
+    
+    .linkError{
+        font-size: 30px;
+        margin-top: 50px;
+        
+    }
+
+  }
+  

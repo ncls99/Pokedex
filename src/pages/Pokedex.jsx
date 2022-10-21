@@ -38,7 +38,7 @@ const handleNextPage = (page) => {
   setCurrentPage(page)
 }
 
-const [page, setPage] = useState(20)
+const [page, setPage] = useState(1)
 const [pokemonPerPage, setPokemonPerPage] = useState(12)
 const initialPoke = (page - 1) * pokemonPerPage
 const finalPoke = page * pokemonPerPage
